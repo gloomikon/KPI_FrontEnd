@@ -1,0 +1,46 @@
+body {
+     background: #FFF;
+     color: #000;
+     font-family: Arial, sans-serif;
+     font-size: 14px;     
+     margin: auto auto;
+}
+
+#header {
+     background: #F5DEB3;
+     width: 100%;
+     height: 33%;
+}
+ 
+#container {
+     background: #FFD700;
+     text-align: center;
+     width: 80%;
+     height: 600px;
+}
+ 
+#content {
+     background: #FE9798;
+     width: 100%;
+     height: 34%;
+}
+ 
+#leftbar {
+     background: #40E0D0;
+     float: left;
+     width: 50%;
+     height: 100%;
+}
+
+#rightbar {
+     background: #DCDCDC;
+     float: right;
+     width: 50%;
+     height: 100%;
+}
+ 
+#footer {
+    background: #00BFFF;
+     width: 100%;
+     height: 33%;
+}
