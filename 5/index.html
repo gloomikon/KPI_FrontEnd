@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="lab5">
+    <meta name="keywords" content="Front-end, lab5">
+    <title>Журба М.А., ІТ-74</title>
+    <script type="text/javascript">
+        const f1 = (e) => {
+            const id = e.target.id;
+            const el = document.getElementById(id);
+
+            const color = el.style.color;
+            el.style.color = (color === "white" ? "black" : "white");
+
+            const bg = el.style['background-color'];
+            el.style['background-color'] = (bg === "yellow" ? "blue" : "yellow");
+        }
+
+        const f2 = (e) => {
+            const el = document.all.item(10);
+
+            const style = el.style;
+            style.color = style.color === "red" ? "white" : "red";
+
+            const bg = style['background-color'];
+            style['background-color'] = (bg === "green" ? "white" : "green");
+        }
+
+        window.addEventListener('load', () => {
+            document.getElementsByTagName('figcaption')[0].onclick = (e) => {
+                const caption = e.target;
+                caption.style.color = caption.style.color === "coral" ? "navy" : "coral";
+
+                const image = document.getElementsByTagName('img')[0];
+                image.style.width = image.style.width === "500px" ? "800px" : "500px";
+            }
+        });
+    </script>
+</head>
+<body>
+    <h2 id="1" onclick="f1(event)" style="background-color: yellow">
+        ДОСТУП ДО ВЛАСТИВОСТЕЙ І МЕТОДІВ
+    </h2>
+    <p id="2" onclick="f2(event)" style="color: red">
+        Журба Микола (Колекція all)
+    </p>
+    <div id="3" onclick="f1(event)" style="background-color: yellow">
+        Варіант 2, група ІТ-74 (Метод getElementById())
+    </div>
+
+    <figure>
+        <img style="width:500px" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="image">
+        <figcaption style="color: navy">click me</figcaption>
+    </figure>
+</body>
+</html>
